@@ -1,0 +1,97 @@
+#new-skills {
+    overflow: hidden;
+    width: 100vw;
+    max-width: 65rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.newSkillTitle {
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.newSkillDesc {
+    font-weight: 400;
+    font-size: 1rem;
+    max-width: 60rem;
+    padding: 0 2rem;
+    margin-bottom: 2rem;
+}
+
+.newSkillCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.newSkillCard {
+    background: rgb(50, 50, 50);
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 20rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.newSkillCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.newSkillCardImg {
+    object-fit: cover;
+    height: 5rem;
+    width: 5rem;
+    margin-bottom: 1rem;
+}
+
+.newSkillCard h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.newSkillCard p {
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 720px) {
+    .newSkillTitle {
+        font-size: 2.5rem;
+    }
+
+    .newSkillCard h2 {
+        font-size: 1.25rem;
+    }
+
+    .newSkillDesc {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .newSkillTitle {
+        font-size: 2rem;
+    }
+
+    .newSkillCard {
+        width: 90%;
+    }
+
+    .newSkillCard h2 {
+        font-size: 1.1rem;
+    }
+
+    .newSkillDesc {
+        font-size: 0.8rem;
+    }
+}
