@@ -23,16 +23,16 @@ const Intro = () => {
             <li><span role='img' aria-label='email'>📧</span> umohd9554@gmail.com</li>
           </ul>
           <div className="socialLinks">
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/MohdUmar07" target="_blank" rel="noopener noreferrer">
             <img src={githubIcon} alt="GitHub" className="socialIcon" />
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/mohdumar2506/" target="_blank" rel="noopener noreferrer">
             <img src={linkedinIcon} alt="LinkedIn" className="socialIcon" />
           </a>
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/anas_ibn_anwar/" target="_blank" rel="noopener noreferrer">
             <img src={instagramIcon} alt="Instagram" className="socialIcon" />
           </a>
-          <a href="https://x.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://x.com/ICodeAlchemist" target="_blank" rel="noopener noreferrer">
             <img src={xIcon} alt="X" className="socialIcon" />
           </a>
         </div>
