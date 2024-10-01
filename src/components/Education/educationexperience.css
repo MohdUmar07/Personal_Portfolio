@@ -67,3 +67,9 @@
         font-size: 0.8rem;
     }
 }
+
+hr{
+    background-color: yellow;
+    height: 3px;
+    margin-bottom: 5px;
+}

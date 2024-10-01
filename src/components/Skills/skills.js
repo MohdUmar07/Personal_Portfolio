@@ -16,12 +16,12 @@ const NewSkills = () => {
         <div className='newSkillCard'>
           <img src={UI} alt='Frontend Development' className='newSkillCardImg' />
           <h2>Frontend Development</h2>
-          <p>HTML, CSS, JavaScript, React, Responsive Design </p>
+          <p>React, Bootstrap</p>
         </div>
         <div className='newSkillCard'>
           <img src={Mern} alt='Backend Development' className='newSkillCardImg' />
           <h2>Backend Development</h2>
-          <p>Node.js, Express.js, Database Mangagement(MongoDB, SQL), RESTful APIs </p>
+          <p>Node.js, Express.js, Databases(MongoDB, SQL), RESTful APIs </p>
         </div>
         <div className='newSkillCard'>
           <img src={webdev} alt='Soft Skills' className='newSkillCardImg' />

@@ -11,6 +11,7 @@ const EducationExperience = () => {
           <p><strong>Shri Lal Bahadur Shastri Degree College</strong></p>
           <p>2022 - Present</p>
         </div>
+        <hr></hr>
         <div className='eduItem'>
           <h3>Intermediate</h3>
           <p><strong>Taj Inter College</strong></p>

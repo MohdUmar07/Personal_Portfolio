@@ -24,7 +24,7 @@
     font-weight: 300;
 }
 
-.cotactForm{
+.contactForm{
     margin: 1rem;
     display:flex;
     flex-direction: column;
@@ -59,9 +59,11 @@
 .links{
     display: flex;
     flex-wrap: wrap;
+    gap: 20px; /* Adds space between the icons */
+    justify-content: center; /* Center the icons */ 
 }
 
-.link{
+.socialIcon{
     object-fit: cover;
     height: 3rem;
     width: 3rem;

@@ -28,7 +28,7 @@ const Works = () => {
           <p className='techStack'>Tech Stack: HTML, CSS, JavaScript</p>
           <div className='workLinks'>
             <a href='https://github.com/MohdUmar07/TriwebAPI-Learning/tree/main/Projects/tic-tac-toe' className='workBtn'>GitHub</a>
-            <a href='https://tictactoe.com' className='workBtn'>Live Demo</a>
+            <a href='https://tictactoe-mohdumar07s-projects.vercel.app/' className='workBtn'>Live Demo</a>
           </div>
         </div>
         <div className='workItem'>
