@@ -18,8 +18,22 @@ const Works = () => {
           <img src={pro3} alt='project-1' className='worksImg' />
           <p className='techStack'>Tech Stack: MERN Stack</p>
           <div className='workLinks'>
-            <a href='https://github.com/MohdUmar07/Quizzy' className='workBtn'>GitHub</a>
-            <a href='https://quizzy.com' className='workBtn'>Live Demo</a>
+            <a
+              href='https://github.com/MohdUmar07/Quizzy'
+              className='workBtn'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              GitHub
+            </a>
+            <a
+              href='https://quizzy-frontend.onrender.com'
+              className='workBtn'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              Live Demo
+            </a>
           </div>
         </div>
         <div className='workItem'>
@@ -27,8 +41,22 @@ const Works = () => {
           <img src={pro2} alt='project-2' className='worksImg' />
           <p className='techStack'>Tech Stack: HTML, CSS, JavaScript</p>
           <div className='workLinks'>
-            <a href='https://github.com/MohdUmar07/TriwebAPI-Learning/tree/main/Projects/tic-tac-toe' className='workBtn'>GitHub</a>
-            <a href='https://tictactoe-mohdumar07s-projects.vercel.app/' className='workBtn'>Live Demo</a>
+            <a
+              href='https://github.com/MohdUmar07/TriwebAPI-Learning/tree/main/Projects/tic-tac-toe'
+              className='workBtn'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              GitHub
+            </a>
+            <a
+              href='https://tictactoe-mohdumar07s-projects.vercel.app/'
+              className='workBtn'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              Live Demo
+            </a>
           </div>
         </div>
         <div className='workItem'>
@@ -36,8 +64,22 @@ const Works = () => {
           <img src={pro1} alt='project-3' className='worksImg' />
           <p className='techStack'>Tech Stack: React, Node.js, Express, MongoDB</p>
           <div className='workLinks'>
-            <a href='https://github.com/MohdUmar07/To-Do-Web-Application' className='workBtn'>GitHub</a>
-            <a href='https://todo.com' className='workBtn'>Live Demo</a>
+            <a
+              href='https://github.com/MohdUmar07/To-Do-Web-Application'
+              className='workBtn'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              GitHub
+            </a>
+            <a
+              href='https://todo.com'
+              className='workBtn'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              Live Demo
+            </a>
           </div>
         </div>
       </div>
