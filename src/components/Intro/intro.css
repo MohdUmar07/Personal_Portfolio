@@ -11,15 +11,13 @@
   box-sizing: border-box; 
 }
 
-/* Profile image container */
 .profile {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  gap: 10px; 
+  gap: 20px; 
 }
 
-/* Profile image styles */
 .profileImageContainer {
   border-radius: 50%;
   background: linear-gradient(135deg, #444444, #222222);
@@ -28,19 +26,18 @@
 }
 
 .profileImage {
-  width: 200px; 
-  height: 200px;
+  width: 280px; 
+  height: 280px;
   border-radius: 50%;
   object-fit: cover;
 }
 
-/* Intro content styling */
 .introContent {
-  max-width: 90%; 
-  margin: 20px 0 0; 
+  max-width: 600px; 
+  margin: 0; 
+  text-align: left;
 }
 
-/* Headings */
 h1 {
   font-size: 2rem; 
   font-weight: bold;
@@ -89,52 +86,59 @@ h2 {
   filter: brightness(0.8); 
 }
 
-/* Prevent horizontal scroll */
 body {
   overflow-x: hidden; 
 }
 
-/* Responsive adjustments */
 @media screen and (max-width: 720px) {
+  .profile {
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .introContent {
+    text-align: center; 
+  }
+
   .profileImage {
-      width: 180px; 
-      height: 180px;
+    width: 240px; 
+    height: 240px;
   }
 
   h1 {
-      font-size: 1.8rem;
+    font-size: 1.8rem;
   }
 
   h2 {
-      font-size: 1.2rem;
+    font-size: 1.2rem;
   }
 
   .socialIcon {
-      width: 35px;
-      height: 35px;
+    width: 35px;
+    height: 35px;
   }
 }
 
 @media screen and (max-width: 480px) {
   .profileImage {
-      width: 150px; 
-      height: 150px; 
+    width: 200px; 
+    height: 200px; 
   }
 
   h1 {
-      font-size: 1.6rem;
+    font-size: 1.6rem;
   }
 
   h2 {
-      font-size: 1rem;
+    font-size: 1rem;
   }
 
   .details {
-      font-size: 0.9rem;
+    font-size: 0.9rem;
   }
 
   .socialIcon {
-      width: 30px; 
-      height: 30px; 
+    width: 30px; 
+    height: 30px; 
   }
 }
