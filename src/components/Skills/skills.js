@@ -16,7 +16,7 @@ const NewSkills = () => {
         <div className='newSkillCard'>
           <img src={UI} alt='Frontend Development' className='newSkillCardImg' />
           <h2>Frontend Development</h2>
-          <p>React, Bootstrap</p>
+          <p>JavaScript, Type Script, React.js, Bootstrap</p>
         </div>
         <div className='newSkillCard'>
           <img src={Mern} alt='Backend Development' className='newSkillCardImg' />
