@@ -89,7 +89,7 @@ const Works = () => {
         <div className="workItem">
           <h3 className="projectTitle">Aero Alert</h3>
           <img src={pro4} alt="project-4" className="worksImg" />
-          <p className="techStack">Tech Stack: Technology Stack Used</p>
+          <p className="techStack">Tech Stack: React.js, Rapid API</p>
           <div className="workLinks">
             <a
               href="https://github.com/MohdUmar07/Your-Project-Repo"
