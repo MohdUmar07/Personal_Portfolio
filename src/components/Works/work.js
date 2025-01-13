@@ -4,7 +4,6 @@ import "./work.css";
 import pro1 from "../../assets/quizzy_image.png";
 import pro2 from "../../assets/tic_tac_toe.png";
 import pro3 from "../../assets/todo_app.png";
-import pro4 from "../../assets/aero_alert.png"
 
 const Works = () => {
   return (
@@ -86,29 +85,7 @@ const Works = () => {
             </a>
           </div>
         </div>
-        <div className="workItem">
-          <h3 className="projectTitle">Aero Alert</h3>
-          <img src={pro4} alt="project-4" className="worksImg" />
-          <p className="techStack">Tech Stack: React.js, Rapid API</p>
-          <div className="workLinks">
-            <a
-              href="https://github.com/MohdUmar07/Your-Project-Repo"
-              className="workBtn"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              GitHub
-            </a>
-            <a
-              href="https://your-project-live-demo-link.com"
-              className="workBtn"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Live Demo
-            </a>
-          </div>
-        </div>
+        
       </div>
     </section>
   );
