@@ -1,6 +1,6 @@
 import './downloadResumeButton.css'; // Keep your existing CSS
 import React from 'react';
-import resume from '../assets/resume.pdf'; // Adjust the path based on your structure
+import resume from '../assets/Mohd Umar.pdf'; // Adjust the path based on your structure
 
 export default function DownloadResumeButton() {
     return (
