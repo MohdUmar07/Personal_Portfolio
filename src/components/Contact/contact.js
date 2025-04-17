@@ -5,7 +5,7 @@ import "./contact.css";
 
 import Github from "../../ui/SocialIcons/Github";
 import LinkedIn from "../../ui/SocialIcons/LinkedIn";
-import Facebook from "../../ui/SocialIcons/Facebook";
+// import Facebook from "../../ui/SocialIcons/Facebook";
 import X from "../../ui/SocialIcons/X";
 
 const Contact = () => {
@@ -154,13 +154,13 @@ const Contact = () => {
           >
             <LinkedIn className="socialIcon" />
           </a>
-          <a
+          {/* <a
             href="https://www.facebook.com/your-facebook-profile/"
             target="_blank"
             rel="noopener noreferrer"
           >
             <Facebook className="socialIcon" />
-          </a>
+          </a> */}
           <a
             href="https://twitter.com/@ICodeAlchemist"
             target="_blank"
