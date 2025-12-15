@@ -1,80 +1,150 @@
+:root {
+    --bg-color: #1e1e1e; /* Dark background base */
+    --card-bg: #2a2a2a; /* Slightly lighter card */
+    --accent-color: #007bff; /* Primary Blue from typical React themes */
+    --text-primary: #ffffff;
+    --text-secondary: #d1d1d1;
+    --tag-bg: #3a3a3a;
+}
+
 #new-skills {
     overflow: hidden;
-    width: 100vw;
-    max-width: 65rem;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin: 0 auto;
-    padding: 2rem 0;
+    padding: 4rem 1rem;
+    background-color: var(--bg-color); /* Optional: distinct section bg */
 }
 
 .newSkillTitle {
-    font-size: 3.2rem;
+    font-size: 3rem;
     font-weight: 700;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-primary);
+    position: relative;
+}
+
+/* Optional underline decoration */
+.newSkillTitle::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: var(--accent-color);
+    margin: 10px auto 0;
+    border-radius: 2px;
 }
 
 .newSkillDesc {
     font-weight: 400;
-    font-size: 1rem;
-    max-width: 60rem;
-    padding: 0 2rem;
-    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    max-width: 50rem;
+    margin-bottom: 4rem;
+    line-height: 1.6;
 }
 
 .newSkillCards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2rem;
+    gap: 2.5rem;
+    width: 100%;
+    max-width: 75rem;
 }
 
 .newSkillCard {
-    background: rgb(50, 50, 50);
-    border-radius: 1rem;
-    padding: 2rem;
-    width: 20rem;
-    transition: transform 0.3s, box-shadow 0.3s;
+    background: var(--card-bg);
+    border-radius: 1.5rem;
+    padding: 2.5rem 2rem;
+    width: 100%;
+    max-width: 22rem; /* Consistent card width */
+    text-align: left; /* Aligns content better for lists */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
 }
 
 .newSkillCard:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    border-color: var(--accent-color);
+}
+
+.cardHeader {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 1rem;
 }
 
 .newSkillCardImg {
-    object-fit: cover;
-    height: 5rem;
-    width: 5rem;
-    margin-bottom: 1rem;
+    object-fit: contain;
+    height: 3.5rem;
+    width: 3.5rem;
+    /* Optional: Brighten icon if it's dark */
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.1));
 }
 
 .newSkillCard h2 {
     font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-    font-weight: 500;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 0;
 }
 
-.newSkillCard p {
+/* Container for the pill tags */
+.skillTags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+/* Individual Skill Pill Style */
+.skillTag {
+    background-color: var(--tag-bg);
+    color: var(--text-secondary);
     font-size: 0.9rem;
-    font-weight: 300;
+    padding: 0.5rem 1rem;
+    border-radius: 50px; /* Pill shape */
+    font-weight: 500;
+    transition: background 0.3s;
+    border: 1px solid transparent;
+}
+
+.newSkillCard:hover .skillTag {
+    background-color: rgba(0, 123, 255, 0.1); /* Light blue tint on hover */
+    color: #fff;
+    border-color: rgba(0, 123, 255, 0.3);
 }
 
 /* Responsive adjustments */
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1024px) {
+    .newSkillCards {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
     .newSkillTitle {
         font-size: 2.5rem;
     }
 
-    .newSkillCard h2 {
-        font-size: 1.25rem;
+    .newSkillDesc {
+        padding: 0 1.5rem;
+        font-size: 1rem;
     }
 
-    .newSkillDesc {
-        font-size: 0.9rem;
+    .newSkillCard {
+        max-width: 90%; /* Take up more width on tablets */
+        align-items: flex-start;
     }
 }
 
@@ -83,15 +153,19 @@
         font-size: 2rem;
     }
 
-    .newSkillCard {
-        width: 90%;
+    .cardHeader {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
     }
 
-    .newSkillCard h2 {
-        font-size: 1.1rem;
+    .newSkillCardImg {
+        height: 3rem;
+        width: 3rem;
     }
 
-    .newSkillDesc {
+    .skillTag {
         font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
     }
 }
