@@ -20,6 +20,13 @@ const Works: React.FC = () => {
       liveUrl: 'https://opcode.academy',
     },
     {
+      title: 'Shahi Awadh - QR Ordering System',
+      img: '/assets/shahiawadh.png',
+      techStack: 'Tech Stack: , NextJS, Postgresql, Prisma, SQlite',
+      githubUrl: 'https://github.com/MohdUmar07/shahi-awadh',
+      liveUrl: 'https://shahiawadh.vercel.app/demo',
+    },
+    {
       title: 'Quizzy',
       img: '/assets/quizzy_image.png',
       techStack: 'Tech Stack: MERN Stack',

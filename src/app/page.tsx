@@ -1,19 +1,19 @@
-import Navbar from '@/temp_portfolio_design/components/Navbar';
-import Hero from '@/temp_portfolio_design/components/Hero';
-import Skills from '@/temp_portfolio_design/components/Skills';
-import EducationExperience from '@/temp_portfolio_design/components/EducationExperience';
-import Projects from '@/temp_portfolio_design/components/Projects';
-import Contact from '@/temp_portfolio_design/components/Contact';
-import Footer from '@/temp_portfolio_design/components/Footer';
+import Navbar from '@/components/Navbar/navbar';
+import Intro from '@/components/Intro/intro';
+import Skills from '@/components/Skills/skills';
+import EducationExperience from '@/components/Education/educationexperience';
+import Works from '@/components/Works/work';
+import Contact from '@/components/Contact/contact';
+import Footer from '@/components/Footer/footer';
 
 export default function Home() {
   return (
     <div className="App">
       <Navbar />
-      <Hero />
+      <Intro />
       <Skills />
       <EducationExperience />
-      <Projects />
+      <Works />
       <Contact />
       <Footer />
     </div>
